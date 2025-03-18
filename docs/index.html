@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>emoji-taskstatus</title>
+    <meta content="emoji-taskstatus" property="og:title" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <link rel="icon" href="dist/svg/taskstatus_done.svg" />
+    <meta
+      content="https://algo-artis-oss.github.io/emoji-taskstatus/ogp.png"
+      property="og:image"
+    />
+    <meta
+      content="https://algo-artis-oss.github.io/emoji-taskstatus/"
+      property="og:url"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "IBM Plex Sans JP", serif;
+      }
+
+      #root {
+        width: 500px;
+        padding: 50px 10px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: #333;
+        font-weight: 600;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: inherit;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .preview {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+      }
+
+      .preview img {
+        display: block;
+        width: 60px;
+        height: 60px;
+        min-width: 0;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .links {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .links a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        width: 130px;
+        border: 1px solid #264499;
+        padding: 10px 15px;
+        text-align: center;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .links a:hover {
+        background-color: #264499;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <h1>emoji-taskstatus</h1>
+        <p>タスク状況を示す、16pxでも見やすいシンプルなアイコンセット</p>
+      </header>
+
+      <main>
+        <section class="preview">
+          <img src="./dist/svg/taskstatus_inprogress.svg" alt="in-progress" />
+          <img src="./dist/svg/taskstatus_done.svg" alt="done" />
+          <img src="./dist/svg/taskstatus_cancel.svg" alt="cancel" />
+        </section>
+
+        <section class="links">
+          <a
+            href="https://github.com/algo-artis-oss/emoji-taskstatus"
+            target="_blank"
+            >GitHub (source)</a
+          >
+          <a href="dist/emoji-taskstatus.zip" download>Download</a>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
